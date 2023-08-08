@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock  %}
+
+
+{% block body %}
+
+
+<h1>Home page</h1>
+<h2>Name :{{name}}</h2>
+<h2>Age :{{age}}
+    {% if age > 18 %}
+    <h3>Ready for volt</h3>
+    {% else %}
+    <h3>not ready</h3>
+    {% endif %}
+
+
+</h2>
+<h2>Place :{{place}}</h2>
+{% endblock  %}
+      
